@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="182.0" layoutY="20.0" text="AutoClicker">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="192.0" text="Clicking Interval" />
+      <Label layoutX="178.0" layoutY="134.0" text="Press F6 to start / stop clicking" textFill="RED" />
+      <RadioButton layoutX="109.0" layoutY="91.0" mnemonicParsing="false" text="Left Click" />
+      <RadioButton layoutX="340.0" layoutY="91.0" mnemonicParsing="false" text="Right CLick" />
+      <TextField layoutX="209.0" layoutY="188.0" prefHeight="25.0" prefWidth="100.0" />
+      <ComboBox layoutX="335.0" layoutY="188.0" prefHeight="25.0" prefWidth="58.0" promptText="ms" />
+      <Hyperlink layoutX="380.0" layoutY="247.0" text="Advanced Settings&gt;&gt;" underline="true" />
+   </children>
+</AnchorPane>
