@@ -4,18 +4,22 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
-
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/mainMenu.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
-    }
 
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/mainMenu.fxml"));
+        Scene simpleMode = new Scene(root);
+        primaryStage.getIcons().add(new Image("/cursor.png"));
+        primaryStage.setResizable(true);
+        primaryStage.setTitle("Auto Clicker by ita07");
+        primaryStage.setScene(simpleMode);
+        primaryStage.show();
+
+    }
 
     public static void main(String[] args) {
         launch(args);
